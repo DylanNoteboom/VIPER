@@ -20,8 +20,8 @@ class AddPresenter: AddViewDelegate {
         self.interactor = interactor
     }
     
-    func addNewPersonTapped() {
-        print("addNewPersonTapped")
+    func addNewPersonTapped(name: String) {
+        self.interactor?.storeNewPerson(name)
     }
     
     func closeAddScreen() {

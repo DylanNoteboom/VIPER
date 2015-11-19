@@ -18,6 +18,7 @@ class ListPresenter: ListViewDelegate {
         self.view = view
         self.view.delegate = self
         self.interactor = interactor
+        self.refreshData()
     }
     
     func refreshData() {

@@ -12,6 +12,8 @@ class AddViewController: UIViewController {
     
     var delegate: AddViewDelegate? // Presenter
     
+    @IBOutlet weak var name: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +28,7 @@ class AddViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func savePerson(sender: AnyObject) {
-        self.delegate?.addNewPersonTapped()
+        self.delegate?.addNewPersonTapped(self.name.text!)
     }
     
     @IBAction func cancelButton(sender: AnyObject) {

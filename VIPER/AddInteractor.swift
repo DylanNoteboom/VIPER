@@ -10,7 +10,7 @@ import Foundation
 
 class AddInteractor {
     
-    func storeNewPerson() {
-        
+    func storeNewPerson(name: String) {
+        print(name)
     }
 }

@@ -9,7 +9,6 @@
 import Foundation
 
 protocol AddViewDelegate {
-    func addNewPersonTapped()
+    func addNewPersonTapped(name: String)
     func closeAddScreen()
-    // test
 }

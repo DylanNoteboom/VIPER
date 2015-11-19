@@ -32,9 +32,9 @@ class ListTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        //cell.textLabel?.text = persons![indexPath.row].name!
+        cell.textLabel?.text = persons![indexPath.row].name!
 
-        return UITableViewCell()//cell
+        return cell
     }
 
     @IBAction func addPerson(sender: UIBarButtonItem) {
@@ -42,7 +42,7 @@ class ListTableViewController: UITableViewController {
     }
     
     func showData(persons: [Person]) {
-        print("showData")
+        self.persons = persons
     }
     
     /*

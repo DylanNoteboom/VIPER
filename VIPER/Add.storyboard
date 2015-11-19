@@ -70,6 +70,9 @@
                             <constraint firstItem="a2c-A0-cUo" firstAttribute="trailing" secondItem="HE5-QT-EpW" secondAttribute="trailingMargin" id="gvF-D5-odk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="name" destination="a2c-A0-cUo" id="ZDn-Zh-z87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0H-tP-Fn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
