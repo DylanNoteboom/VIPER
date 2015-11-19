@@ -9,19 +9,61 @@
 /* Begin PBXBuildFile section */
 		E606B40E1BFB16B900C3C291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B40D1BFB16B900C3C291 /* AppDelegate.swift */; };
 		E606B4101BFB16B900C3C291 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B40F1BFB16B900C3C291 /* ViewController.swift */; };
-		E606B4131BFB16B900C3C291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E606B4111BFB16B900C3C291 /* Main.storyboard */; };
+		E606B4131BFB16B900C3C291 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E606B4111BFB16B900C3C291 /* List.storyboard */; };
 		E606B4151BFB16B900C3C291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E606B4141BFB16B900C3C291 /* Assets.xcassets */; };
 		E606B4181BFB16B900C3C291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E606B4161BFB16B900C3C291 /* LaunchScreen.storyboard */; };
+		E606B4221BFB1A2500C3C291 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B4211BFB1A2500C3C291 /* ListWireframe.swift */; };
+		E606B4241BFB1AAE00C3C291 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B4231BFB1AAE00C3C291 /* BaseWireframe.swift */; };
+		E606B4291BFB243D00C3C291 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B4281BFB243D00C3C291 /* ListTableViewController.swift */; };
+		E606B42C1BFB24A300C3C291 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B42B1BFB24A300C3C291 /* ListPresenter.swift */; };
+		E606B42F1BFB4DDD00C3C291 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B42E1BFB4DDD00C3C291 /* ListInteractor.swift */; };
+		E606B4361BFB551100C3C291 /* PersonListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B4351BFB551100C3C291 /* PersonListService.swift */; };
+		E606B4411BFB5C2500C3C291 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B43F1BFB5C2500C3C291 /* Person.swift */; };
+		E606B53D1BFB80EF00C3C291 /* AddWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B53C1BFB80EF00C3C291 /* AddWireframe.swift */; };
+		E606B53F1BFB810800C3C291 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E606B53E1BFB810800C3C291 /* Add.storyboard */; };
+		E606B5471BFC7A9500C3C291 /* PersonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B5461BFC7A9500C3C291 /* PersonApp.swift */; };
+		E606B5491BFC84C700C3C291 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B5481BFC84C700C3C291 /* ListView.swift */; };
+		E606B54B1BFC870E00C3C291 /* ListOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B54A1BFC870E00C3C291 /* ListOutput.swift */; };
+		E606B54D1BFCC7D700C3C291 /* ListWireframeOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B54C1BFCC7D700C3C291 /* ListWireframeOutput.swift */; };
+		E606B54F1BFDCA9100C3C291 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B54E1BFDCA9100C3C291 /* AddViewController.swift */; };
+		E606B5511BFDCAC400C3C291 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B5501BFDCAC400C3C291 /* AddPresenter.swift */; };
+		E606B5531BFDCAD400C3C291 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B5521BFDCAD400C3C291 /* AddInteractor.swift */; };
+		E606B5551BFDCB0400C3C291 /* AddWireframeOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B5541BFDCB0400C3C291 /* AddWireframeOutput.swift */; };
+		E606B5571BFDCB1300C3C291 /* AddOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B5561BFDCB1300C3C291 /* AddOutput.swift */; };
+		E606B55B1BFDDF9100C3C291 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606B55A1BFDDF9100C3C291 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DB673A6120B17C77863A621 /* Pods_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23AC55A401F67C45374531AB /* Pods-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER/Pods-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
+		414471A2202070F86F01FD14 /* Pods-VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER/Pods-VIPER.release.xcconfig"; sourceTree = "<group>"; };
 		E606B40A1BFB16B900C3C291 /* VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E606B40D1BFB16B900C3C291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E606B40F1BFB16B900C3C291 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E606B4121BFB16B900C3C291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E606B4121BFB16B900C3C291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/List.storyboard; sourceTree = "<group>"; };
 		E606B4141BFB16B900C3C291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E606B4171BFB16B900C3C291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E606B4191BFB16B900C3C291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E606B4211BFB1A2500C3C291 /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		E606B4231BFB1AAE00C3C291 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		E606B4281BFB243D00C3C291 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		E606B42B1BFB24A300C3C291 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		E606B42E1BFB4DDD00C3C291 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		E606B4351BFB551100C3C291 /* PersonListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListService.swift; sourceTree = "<group>"; };
+		E606B43F1BFB5C2500C3C291 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../Person.swift; sourceTree = "<group>"; };
+		E606B5361BFB7C0700C3C291 /* CoreStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreStore.framework; path = "Pods/../build/Debug-iphoneos/CoreStore.framework"; sourceTree = "<group>"; };
+		E606B53C1BFB80EF00C3C291 /* AddWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWireframe.swift; sourceTree = "<group>"; };
+		E606B53E1BFB810800C3C291 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		E606B5461BFC7A9500C3C291 /* PersonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonApp.swift; sourceTree = "<group>"; };
+		E606B5481BFC84C700C3C291 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E606B54A1BFC870E00C3C291 /* ListOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOutput.swift; sourceTree = "<group>"; };
+		E606B54C1BFCC7D700C3C291 /* ListWireframeOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframeOutput.swift; sourceTree = "<group>"; };
+		E606B54E1BFDCA9100C3C291 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		E606B5501BFDCAC400C3C291 /* AddPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
+		E606B5521BFDCAD400C3C291 /* AddInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
+		E606B5541BFDCB0400C3C291 /* AddWireframeOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWireframeOutput.swift; sourceTree = "<group>"; };
+		E606B5561BFDCB1300C3C291 /* AddOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOutput.swift; sourceTree = "<group>"; };
+		E606B55A1BFDDF9100C3C291 /* AddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,11 +77,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD96D5C833CA8DFE2455F0FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E606B5361BFB7C0700C3C291 /* CoreStore.framework */,
+				1DB673A6120B17C77863A621 /* Pods_VIPER.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C18FB38587C7C1970290CAEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23AC55A401F67C45374531AB /* Pods-VIPER.debug.xcconfig */,
+				414471A2202070F86F01FD14 /* Pods-VIPER.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E606B4011BFB16B900C3C291 = {
 			isa = PBXGroup;
 			children = (
 				E606B40C1BFB16B900C3C291 /* VIPER */,
 				E606B40B1BFB16B900C3C291 /* Products */,
+				C18FB38587C7C1970290CAEA /* Pods */,
+				AD96D5C833CA8DFE2455F0FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +116,129 @@
 		E606B40C1BFB16B900C3C291 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				E606B4231BFB1AAE00C3C291 /* BaseWireframe.swift */,
+				E606B5461BFC7A9500C3C291 /* PersonApp.swift */,
+				E606B4301BFB53B000C3C291 /* Data */,
+				E606B41F1BFB19D200C3C291 /* Modules */,
 				E606B40D1BFB16B900C3C291 /* AppDelegate.swift */,
 				E606B40F1BFB16B900C3C291 /* ViewController.swift */,
-				E606B4111BFB16B900C3C291 /* Main.storyboard */,
 				E606B4141BFB16B900C3C291 /* Assets.xcassets */,
 				E606B4161BFB16B900C3C291 /* LaunchScreen.storyboard */,
 				E606B4191BFB16B900C3C291 /* Info.plist */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		E606B41F1BFB19D200C3C291 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E606B5381BFB80B500C3C291 /* Add */,
+				E606B4201BFB19D900C3C291 /* List */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		E606B4201BFB19D900C3C291 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E606B4111BFB16B900C3C291 /* List.storyboard */,
+				E606B4211BFB1A2500C3C291 /* ListWireframe.swift */,
+				E606B54C1BFCC7D700C3C291 /* ListWireframeOutput.swift */,
+				E606B42D1BFB4DCD00C3C291 /* Interactor */,
+				E606B42A1BFB249000C3C291 /* Presenter */,
+				E606B4251BFB23AF00C3C291 /* View */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		E606B4251BFB23AF00C3C291 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E606B4281BFB243D00C3C291 /* ListTableViewController.swift */,
+				E606B5481BFC84C700C3C291 /* ListView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E606B42A1BFB249000C3C291 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E606B42B1BFB24A300C3C291 /* ListPresenter.swift */,
+				E606B54A1BFC870E00C3C291 /* ListOutput.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		E606B42D1BFB4DCD00C3C291 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E606B42E1BFB4DDD00C3C291 /* ListInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		E606B4301BFB53B000C3C291 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E606B4311BFB53C100C3C291 /* Data Manager */,
+				E606B4371BFB552C00C3C291 /* Model */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E606B4311BFB53C100C3C291 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E606B4351BFB551100C3C291 /* PersonListService.swift */,
+			);
+			name = "Data Manager";
+			sourceTree = "<group>";
+		};
+		E606B4371BFB552C00C3C291 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E606B43F1BFB5C2500C3C291 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E606B5381BFB80B500C3C291 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				E606B53E1BFB810800C3C291 /* Add.storyboard */,
+				E606B53C1BFB80EF00C3C291 /* AddWireframe.swift */,
+				E606B5541BFDCB0400C3C291 /* AddWireframeOutput.swift */,
+				E606B53B1BFB80D700C3C291 /* Interactor */,
+				E606B53A1BFB80CE00C3C291 /* Presenter */,
+				E606B5391BFB80BE00C3C291 /* View */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		E606B5391BFB80BE00C3C291 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E606B54E1BFDCA9100C3C291 /* AddViewController.swift */,
+				E606B55A1BFDDF9100C3C291 /* AddView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E606B53A1BFB80CE00C3C291 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E606B5501BFDCAC400C3C291 /* AddPresenter.swift */,
+				E606B5561BFDCB1300C3C291 /* AddOutput.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		E606B53B1BFB80D700C3C291 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E606B5521BFDCAD400C3C291 /* AddInteractor.swift */,
+			);
+			name = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +273,7 @@
 				TargetAttributes = {
 					E606B4091BFB16B900C3C291 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = M87Y2U8SM3;
 					};
 				};
 			};
@@ -124,7 +302,8 @@
 			files = (
 				E606B4181BFB16B900C3C291 /* LaunchScreen.storyboard in Resources */,
 				E606B4151BFB16B900C3C291 /* Assets.xcassets in Resources */,
-				E606B4131BFB16B900C3C291 /* Main.storyboard in Resources */,
+				E606B53F1BFB810800C3C291 /* Add.storyboard in Resources */,
+				E606B4131BFB16B900C3C291 /* List.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,20 +314,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E606B5571BFDCB1300C3C291 /* AddOutput.swift in Sources */,
+				E606B4221BFB1A2500C3C291 /* ListWireframe.swift in Sources */,
+				E606B4361BFB551100C3C291 /* PersonListService.swift in Sources */,
+				E606B5491BFC84C700C3C291 /* ListView.swift in Sources */,
 				E606B4101BFB16B900C3C291 /* ViewController.swift in Sources */,
 				E606B40E1BFB16B900C3C291 /* AppDelegate.swift in Sources */,
+				E606B54F1BFDCA9100C3C291 /* AddViewController.swift in Sources */,
+				E606B4411BFB5C2500C3C291 /* Person.swift in Sources */,
+				E606B54B1BFC870E00C3C291 /* ListOutput.swift in Sources */,
+				E606B42F1BFB4DDD00C3C291 /* ListInteractor.swift in Sources */,
+				E606B5551BFDCB0400C3C291 /* AddWireframeOutput.swift in Sources */,
+				E606B4291BFB243D00C3C291 /* ListTableViewController.swift in Sources */,
+				E606B55B1BFDDF9100C3C291 /* AddView.swift in Sources */,
+				E606B54D1BFCC7D700C3C291 /* ListWireframeOutput.swift in Sources */,
+				E606B5531BFDCAD400C3C291 /* AddInteractor.swift in Sources */,
+				E606B42C1BFB24A300C3C291 /* ListPresenter.swift in Sources */,
+				E606B53D1BFB80EF00C3C291 /* AddWireframe.swift in Sources */,
+				E606B5471BFC7A9500C3C291 /* PersonApp.swift in Sources */,
+				E606B5511BFDCAC400C3C291 /* AddPresenter.swift in Sources */,
+				E606B4241BFB1AAE00C3C291 /* BaseWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E606B4111BFB16B900C3C291 /* Main.storyboard */ = {
+		E606B4111BFB16B900C3C291 /* List.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E606B4121BFB16B900C3C291 /* Base */,
 			);
-			name = Main.storyboard;
+			name = List.storyboard;
 			sourceTree = "<group>";
 		};
 		E606B4161BFB16B900C3C291 /* LaunchScreen.storyboard */ = {
@@ -245,23 +442,41 @@
 		};
 		E606B41D1BFB16B900C3C291 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23AC55A401F67C45374531AB /* Pods-VIPER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = VIPER/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.dylannoteboom.VIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		E606B41E1BFB16B900C3C291 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414471A2202070F86F01FD14 /* Pods-VIPER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = VIPER/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.dylannoteboom.VIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +499,7 @@
 				E606B41E1BFB16B900C3C291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IK5-RT-Um1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add View Controller-->
+        <scene sceneID="nfd-KS-h8c">
+            <objects>
+                <viewController id="IK5-RT-Um1" customClass="AddViewController" customModule="VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="To4-RN-bIv"/>
+                        <viewControllerLayoutGuide type="bottom" id="E6q-Z4-HdZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HE5-QT-EpW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-A0-cUo">
+                                <rect key="frame" x="20" y="98" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="XIQ-9V-6TE">
+                                <rect key="frame" x="202" y="479" width="196" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8V-ac-9ti">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="IK5-RT-Um1" eventType="touchUpInside" id="OUn-7T-hC2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbH-Av-Gjq">
+                                        <rect key="frame" x="148" y="0.0" width="48" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="savePerson:" destination="IK5-RT-Um1" eventType="touchUpInside" id="UQY-Gq-xia"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="J94-aU-kuy"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kjp-fP-ESZ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5Q-Fm-25T">
+                                <rect key="frame" x="256" y="47" width="89" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N5Q-Fm-25T" firstAttribute="centerX" secondItem="HE5-QT-EpW" secondAttribute="centerX" id="04W-Qf-VwO"/>
+                            <constraint firstItem="a2c-A0-cUo" firstAttribute="leading" secondItem="HE5-QT-EpW" secondAttribute="leadingMargin" id="1NU-Cy-hV0"/>
+                            <constraint firstItem="XIQ-9V-6TE" firstAttribute="centerX" secondItem="HE5-QT-EpW" secondAttribute="centerX" id="Zdx-lj-wLL"/>
+                            <constraint firstItem="a2c-A0-cUo" firstAttribute="top" secondItem="N5Q-Fm-25T" secondAttribute="bottom" constant="30" id="byu-FB-0ki"/>
+                            <constraint firstItem="E6q-Z4-HdZ" firstAttribute="top" secondItem="XIQ-9V-6TE" secondAttribute="bottom" constant="91" id="e0G-6f-OrY"/>
+                            <constraint firstItem="N5Q-Fm-25T" firstAttribute="top" secondItem="To4-RN-bIv" secondAttribute="bottom" constant="27" id="fzx-CY-x39"/>
+                            <constraint firstItem="a2c-A0-cUo" firstAttribute="trailing" secondItem="HE5-QT-EpW" secondAttribute="trailingMargin" id="gvF-D5-odk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0H-tP-Fn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="254"/>
+        </scene>
+    </scenes>
+</document>

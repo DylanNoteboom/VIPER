@@ -1,0 +1,3 @@
+[submodule "myproject/libraries"]
+	path = myproject/libraries
+	url = https://github.com/sugarrecord/sugarrecord
